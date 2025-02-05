@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent bg-white">
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
@@ -48,19 +48,19 @@
     </header>
     <!-- Header End -->
     <!-- Hero Section Start -->
-    <section id="home" class="pt-32">
+    <section id="home" class="pt-32 bg-emerald-300 max-w-full pb-24 px-14 md:px-20">
       <div class="containter">
-        <div class="flex flex-wrap bg-emerald-300 max-w-full pb-5 pt-3">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-white md:text-2xl">
-              Hallo semuanya, perkenalkan <span class="text-base font-semibold text-cyan-500 md:text-2xl">Nama saya</span> <span class="block font-bold text-zinc-950 text-4xl mt-1 lg:text-5xl">Edrick Ernest Sinaga </span>
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2 pt-12">
+            <h1 class="text-base font-semibold text-white md:text-3xl">
+              Hallo semuanya, perkenalkan <span class="text-base font-semibold text-cyan-500 md:text-3xl">Nama saya</span> <span class="block font-bold text-zinc-950 text-4xl mt-1 lg:text-5xl">Edrick Ernest Sinaga </span>
             </h1>
-            <h2 class="font-medium text-white text-lg mb-5 lg:text-3xl">Seorang Pelajar | <span class="text-cyan-500"> Mahasiswa Universitas Satya Negara Indonesia</span></h2>
+            <h2 class="font-medium text-white text-lg mb-5 lg:text-3xl">Seorang Pelajar | <span class="text-cyan-500 font-bold"> Mahasiswa Universitas Satya Negara Indonesia</span></h2>
             <p class="font-medium text-white mb-10 leading-relaxed">Menguasai 1 bidang hal yang mudah bukan? <span class="text-cyan-500 font-bold">Bukan!!</span></p>
 
             <a href="https://api.whatsapp.com/send?phone=6281282142315" class="text-base font-semibold text-white bg-cyan-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me</a>
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="w-full self-end px-4 lg:w-1/2 pt-8">
             <div class="relative mt-10 lg:mt-9 lg:right-0">
               <img src="dist/images/Foto Edrick.jpeg" alt="Edrick Ernest Sinaga" class="max-w-full mx-auto rounded-full mb-5 mt-3" />
             </div>
@@ -71,10 +71,10 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-32 pb-28 mb-12">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
+          <div class="w-full px-4 mb-10 lg:w-1/2 pb-24">
             <h4 class="font-bold text-teal-500 text-4xl mb-3">Tentang Saya</h4>
             <h2 class="font-bold text-zinc-950 text-xl mb-5 max-w-md lg:text-2xl">Yuk, kenali lebih dalam tentang aku</h2>
             <p class="font-medium text-base text-dark max-w-xl lg:text-lg">
@@ -82,7 +82,7 @@
               framework Tailwindcss
             </p>
           </div>
-          <div class="w-full px-4 lg:w-1/2">
+          <div class="w-full px-4 lg:w-1/2 pb-5">
             <h3 class="font-semibold text-teal-500 text-2xl mb-4 lg:text-3xl lg:pt-10">Social Media Saya</h3>
             <p class="font-medium text-base text-dark mb-6 lg:text-lg">Berikut adalah beberapa sosial media saya, yang masih aktif di beberapa kalangan saat ini</p>
             <div class="flex items-center">
@@ -153,7 +153,7 @@
     <!-- About Section End -->
 
     <!-- Portofolio Section Start -->
-    <section id="portofolio" class="pt-20 pb-16 bg-slate-100">
+    <section id="portofolio" class="pt-16 pb-8 bg-slate-100 mt-10">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
@@ -197,7 +197,7 @@
     <!-- Portofolio Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-20 pb-16 mb-16">
+    <section id="contact" class="pt-12 pb-16 mb-16">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
@@ -210,19 +210,19 @@
         <!-- Form with validation and hidden data submission -->
         <form id="contactForm" onsubmit="return validateAndSubmitForm(event)">
           <div class="w-full lg:mx-auto lg:w-2/3">
-            <div class="mb-8 w-full px-4">
+            <div class="mb-6 w-full px-3">
               <label for="name" class="text-base font-bold text-primary">Nama</label>
               <input type="text" id="name" name="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required />
             </div>
-            <div class="mb-8 w-full px-4">
+            <div class="mb-6 w-full px-3">
               <label for="email" class="text-base font-bold text-primary">Email</label>
               <input type="email" id="email" name="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required />
             </div>
-            <div class="mb-8 w-full px-4">
+            <div class="mb-6 w-full px-3">
               <label for="message" class="text-base font-bold text-primary">Pesan</label>
               <textarea id="message" name="message" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required></textarea>
             </div>
-            <div class="w-full px-4">
+            <div class="w-full px-3">
               <button type="submit" class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
             </div>
           </div>
